@@ -15,7 +15,7 @@ INSERT INTO students (id, name) VALUES (1, 'Bob'); -- duplicate ID
 ```sql
 INSERT INTO students (id, name) VALUES (1, 'Alice');
 ```
--- Next time you have to figure out the next ID yourself!
+- Next time you have to figure out the next ID yourself!
 
 
 
