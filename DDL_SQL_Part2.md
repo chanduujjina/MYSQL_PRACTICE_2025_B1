@@ -23,3 +23,11 @@ DELETE FROM table_name;
 ```sql
 DROP TABLE table_name;
 ```
+## 🧠 Summary Table
+| Task         | Generic SQL Command                        |
+| ------------ | ------------------------------------------ |
+| Create Table | `CREATE TABLE table_name (...)`            |
+| Rename Table | `RENAME TABLE old TO new` or `ALTER TABLE` |
+| Delete Data  | `DELETE FROM table_name`                   |
+| Drop Table   | `DROP TABLE table_name`                    |
+
