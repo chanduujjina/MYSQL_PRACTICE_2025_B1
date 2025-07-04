@@ -19,3 +19,15 @@ CREATE TABLE table_name (
 | `FOREIGN KEY` | `FOREIGN KEY (dept_id) REFERENCES ...`     | Enforces relationship            |
 | `CHECK`       | `CHECK (age >= 18)`                        | Enforces logical condition       |
 | `DEFAULT`     | `salary DECIMAL DEFAULT 30000.00`          | Default value when none provided |
+
+## 🎯 SQL Constraints Categorized
+
+### 🔹 1. Value-Level Constraints (Applied to Individual Columns)
+   - These constraints control what kind of values can be stored in a column.
+
+| Constraint | Meaning                               | Example                               |
+| ---------- | ------------------------------------- | ------------------------------------- |
+| `NOT NULL` | Value **must be provided**            | `name VARCHAR(100) NOT NULL`          |
+| `DEFAULT`  | Set a **default value** if none given | `status VARCHAR(10) DEFAULT 'active'` |
+| `CHECK`    | Must satisfy a **condition**          | `age INT CHECK (age >= 18)`           |
+| `UNIQUE`   | Value **must be unique**              | `email VARCHAR(100) UNIQUE`           |
