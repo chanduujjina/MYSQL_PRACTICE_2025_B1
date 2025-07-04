@@ -14,7 +14,12 @@ CREATE TABLE table_name (
 RENAME TABLE old_table_name TO new_table_name;
 ```
 
-## 🧨 3. Drop Table (Delete Table Completely)
+## ❌ 3. Delete All Rows from Table (But Keep Structure)
+```sql
+DELETE FROM table_name;
+```
+
+## 🧨 4. Drop Table (Delete Table Completely)
 ```sql
 DROP TABLE table_name;
 ```
