@@ -31,3 +31,24 @@ CREATE TABLE table_name (
 | `DEFAULT`  | Set a **default value** if none given | `status VARCHAR(10) DEFAULT 'active'` |
 | `CHECK`    | Must satisfy a **condition**          | `age INT CHECK (age >= 18)`           |
 | `UNIQUE`   | Value **must be unique**              | `email VARCHAR(100) UNIQUE`           |
+
+
+### 🔹 2. Key Constraints (Ensure Uniqueness and Relationships)
+- These are used to identify rows uniquely and relate tables.
+  
+| Constraint    | Purpose                                     | Example                                            |
+| ------------- | ------------------------------------------- | -------------------------------------------------- |
+| `PRIMARY KEY` | Uniquely identifies each row                | `id INT PRIMARY KEY`                               |
+| `FOREIGN KEY` | Links one table to another                  | `FOREIGN KEY (dept_id) REFERENCES departments(id)` |
+| `UNIQUE`      | Ensures all values in a column are distinct | `UNIQUE (email)`                                   |
+
+### 🧠 Summary Table
+
+| Type                  | Constraint    | Use Case Example          |
+| --------------------- | ------------- | ------------------------- |
+| Value-Level           | `NOT NULL`    | Prevent empty name        |
+|                       | `DEFAULT`     | Default status = 'active' |
+|                       | `CHECK`       | Age must be > 18          |
+| Identity & Uniqueness | `PRIMARY KEY` | Unique ID for each row    |
+|                       | `UNIQUE`      | No duplicate emails       |
+| Relationships         | `FOREIGN KEY` | Link to department table  |
