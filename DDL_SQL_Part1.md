@@ -21,4 +21,13 @@ SHOW DATABASES;
 ```sql
 USE other_database;
 ```
-```
+## 🧠 Summary Table
+| Task            | SQL Command             | Description                           |
+| --------------- | ----------------------- | ------------------------------------- |
+| Create Database | `CREATE DATABASE name;` | Makes a new database                  |
+| Use Database    | `USE name;`             | Switches context to that DB           |
+| List Databases  | `SHOW DATABASES;`       | Displays all databases                |
+| Change Database | `USE new_db;`           | Switches to another existing database |
+
+
+
