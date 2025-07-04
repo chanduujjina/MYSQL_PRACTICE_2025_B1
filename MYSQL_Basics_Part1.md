@@ -33,3 +33,5 @@
 | **D**elete | `DELETE`    | Remove data          |
 
 
+## ✅ What is a Rollback Mechanism?
+- Rollback is the process of undoing a transaction when something goes wrong, restoring the database to its previous consistent state.
