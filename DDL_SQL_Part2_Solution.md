@@ -88,3 +88,23 @@ ALTER TABLE table_name
 ADD CONSTRAINT constraint_name PRIMARY KEY (column_name);
 ```
 
+## 📘 MySQL Constraint & Attribute Removal Cheat Sheet
+### ✅ 1. Drop PRIMARY KEY
+
+```sql
+ALTER TABLE table_name
+DROP PRIMARY KEY;
+```
+### ✅ 2. Drop UNIQUE Constraint
+```sql
+ALTER TABLE table_name
+DROP INDEX constraint_name;
+SHOW INDEX FROM table_name;
+
+```
+### ✅ 3. Drop Check Constraint
+```sql
+ALTER TABLE table_name DROP CHECK constraint_name;
+```
+
+
