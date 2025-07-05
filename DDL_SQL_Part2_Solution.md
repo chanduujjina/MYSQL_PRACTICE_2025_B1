@@ -75,3 +75,16 @@ ALTER TABLE table_name MODIFY column_name datatype DEFAULT default_value;
 ALTER TABLE table_name
 ADD CONSTRAINT constraint_name CHECK (condition);
 ```
+
+### ✅ 5 .Add NOT NULL to an Existing Column in MySQL
+
+```sql
+ALTER TABLE table_name MODIFY column_name data_type NOT NULL;
+```
+
+### ✅ 6. Add PRIMARY KEY to an Existing Column
+```sql
+ALTER TABLE table_name
+ADD CONSTRAINT constraint_name PRIMARY KEY (column_name);
+```
+
