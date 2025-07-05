@@ -31,6 +31,8 @@ DROP TABLE table_name;
 | Delete Data  | `DELETE FROM table_name`                   |
 | Drop Table   | `DROP TABLE table_name`                    |
 
+
+
 ## ✅ 1. Alter Column Name
 ```sql
 ALTER TABLE table_name
@@ -46,4 +48,16 @@ MODIFY column_name new_data_type;
 ALTER TABLE table_name
 MODIFY column_name data_type(new_size);
 ```
+
+## ✅ 4. Add a Column
+```sql
+ALTER TABLE table_name ADD column_name data_type;
+``
+
+## ❌ 2. Drop a Column
+```sql
+ALTER TABLE table_name
+DROP COLUMN column_name;
+```
+
 
