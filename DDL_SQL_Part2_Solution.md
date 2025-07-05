@@ -107,4 +107,9 @@ SHOW INDEX FROM table_name;
 ALTER TABLE table_name DROP CHECK constraint_name;
 ```
 
+### ✅ 4. Drop FOREIGN KEY
+```sql
+ALTER TABLE table_name
+DROP FOREIGN KEY constraint_name;
 
+```
