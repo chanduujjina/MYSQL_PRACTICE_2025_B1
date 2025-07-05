@@ -54,10 +54,9 @@ MODIFY column_name data_type(new_size);
 ALTER TABLE table_name ADD column_name data_type;
 ``
 
-## ❌ 2. Drop a Column
+##  ❌ 5. Drop a Column
 ```sql
-ALTER TABLE table_name
-DROP COLUMN column_name;
+ALTER TABLE table_name DROP COLUMN column_name;
 ```
 
 
