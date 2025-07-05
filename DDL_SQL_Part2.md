@@ -52,7 +52,7 @@ MODIFY column_name data_type(new_size);
 ## ✅ 4. Add a Column
 ```sql
 ALTER TABLE table_name ADD column_name data_type;
-``
+```
 
 ##  ❌ 5. Drop a Column
 ```sql
