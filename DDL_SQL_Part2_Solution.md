@@ -68,3 +68,10 @@ CREATE TABLE table_name (
 ALTER TABLE table_name MODIFY column_name datatype DEFAULT default_value;
 
 ```
+
+### ✅ 4.Syntax to Add CHECK Constraint to an Existing Table
+```sql
+
+ALTER TABLE table_name
+ADD CONSTRAINT constraint_name CHECK (condition);
+```
