@@ -52,3 +52,14 @@ CREATE TABLE table_name (
 | Identity & Uniqueness | `PRIMARY KEY` | Unique ID for each row    |
 |                       | `UNIQUE`      | No duplicate emails       |
 | Relationships         | `FOREIGN KEY` | Link to department table  |
+
+### ✅ 2. Add UNIQUE to an Existing Table
+- 🔸 For a single column:
+```sql
+ ALTER TABLE {tableName} ADD CONSTRAINT {contraint_name} UNIQUE ({columnName});
+```
+
+- 🔸 For multiple columns:
+  ```sql
+   ALTER TABLE {tableName} ADD CONSTRAINT {contraint_name} UNIQUE ({columnName1},{columnName2});
+  ```
