@@ -63,3 +63,7 @@ CREATE TABLE table_name (
   ```sql
    ALTER TABLE {tableName} ADD CONSTRAINT {contraint_name} UNIQUE ({columnName1},{columnName2});
   ```
+### ✅ 3.Add DEFAULT to Existing Column
+```sql
+ALTER TABLE table_name ALTER COLUMN column_name SET DEFAULT default_value;
+```
