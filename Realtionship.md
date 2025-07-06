@@ -95,5 +95,15 @@ CREATE TABLE orders (
 ```
 
 ## 🧾 DML: Insert Script
+```sql
+INSERT INTO customers (id, name, email) VALUES
+(1, 'Alice', 'alice@example.com'),
+(2, 'Bob', 'bob@example.com');
+
+INSERT INTO orders (id, customer_id, order_date, total_amount) VALUES
+(101, 1, '2024-01-15', 250.00),
+(102, 1, '2024-02-10', 175.50),
+(103, 2, '2024-03-05', 320.00);
+```
 
 
