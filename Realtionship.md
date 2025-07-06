@@ -94,3 +94,6 @@ CREATE TABLE orders (
 );
 ```
 
+## 🧾 DML: Insert Script
+
+
