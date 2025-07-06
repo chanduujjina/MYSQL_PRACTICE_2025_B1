@@ -106,4 +106,40 @@ INSERT INTO orders (id, customer_id, order_date, total_amount) VALUES
 (103, 2, '2024-03-05', 320.00);
 ```
 
+# 🔗 Many-to-Many Relationship in SQL (MySQL)
 
+## 🎓 Example: Students and Courses
+
+- One **student** can enroll in **many courses**
+- One **course** can be taken by **many students**
+- Requires a **junction table** (enrollment)
+
+---
+
+
+## 🗺️ ER Diagram (Mermaid)
+
+```mermaid
+erDiagram
+    STUDENTS ||--o{ ENROLLMENTS : enrolls
+    COURSES ||--o{ ENROLLMENTS : has
+
+    STUDENTS {
+        INT id PK
+        VARCHAR name
+        VARCHAR email
+    }
+
+    COURSES {
+        INT id PK
+        VARCHAR title
+        VARCHAR instructor
+    }
+
+    ENROLLMENTS {
+        INT student_id FK
+        INT course_id FK
+        DATE enrolled_on
+        PRIMARY(student_id, course_id)
+    }
+```
