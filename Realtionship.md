@@ -1,4 +1,4 @@
-# Relation Ship
+# RelationShip
 ## One to One Realationship
 ```mermaid
 erDiagram
@@ -42,4 +42,35 @@ VALUES
 (2, 'Bob', 'bob@example.com'),
 (3, 'Charlie', 'charlie@example.com');
 
+```
+# 📦 One-to-Many Relationship in SQL (MySQL)
+## Example: Customers and Orders
+
+---
+
+## 📘 Concept
+
+- **One Customer** can have **many Orders**
+- **Each Order** belongs to **one Customer**
+
+---
+
+## 🗺️ ER Diagram (Mermaid)
+
+```mermaid
+erDiagram
+    CUSTOMERS ||--o{ ORDERS : places
+
+    CUSTOMERS {
+        INT id PK
+        VARCHAR name
+        VARCHAR email
+    }
+
+    ORDERS {
+        INT id PK
+        INT customer_id FK
+        DATE order_date
+        DECIMAL total_amount
+    }
 ```
