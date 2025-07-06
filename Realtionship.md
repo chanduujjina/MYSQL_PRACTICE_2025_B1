@@ -1,3 +1,5 @@
+# Relation Ship
+## One to One Realationship
 ```mermaid
 erDiagram
     USERS ||--|| USER_PROFILES : has
