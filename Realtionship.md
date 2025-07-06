@@ -15,7 +15,7 @@ erDiagram
     }
 ```
 
-## Query
+## DDL Query
 
 ```sql
 -- Create USERS table
@@ -32,4 +32,14 @@ CREATE TABLE user_profiles (
     dob DATE,
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
+```
+
+## Insert Query
+```sql
+INSERT INTO users (id, name, email)
+VALUES 
+(1, 'Alice', 'alice@example.com'),
+(2, 'Bob', 'bob@example.com'),
+(3, 'Charlie', 'charlie@example.com');
+
 ```
